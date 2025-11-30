@@ -57,7 +57,7 @@ export default function Experience() {
                   rel="noopener noreferrer"
                   className="certificate-icon position-absolute top-0 end-0 m-2"
                 >
-                  <img src="icons/transper_link.png" alt="Certificate" />
+                  <img src="/icons/transper_link.png" alt="Certificate" />
                 </a>
               )}
 
