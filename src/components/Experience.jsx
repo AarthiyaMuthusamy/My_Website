@@ -7,7 +7,7 @@ const experience = [
     company: "Aptean India Pvt Ltd",
     description:
       "Developed and optimized enterprise modules in Java and SQL, improving system uptime and reducingerror rates by 15%. Performed unit testing (JUnit, Postman) and automated API validations, reducing integration bugs by 20%. Diagnosed and resolved backend issues in customer-facing applications, cutting response times by 30%. Collaborated in an Agile/Scrum environment with sprint planning, daily stand-ups, and JIRA-based task tracking.",
-    certificate: "/icons/Aarthiya_Intern_certificate.pdf",
+    certificate: "/icons/Aarthiya_Intern_Certificate.pdf",
   },
 ];
 
