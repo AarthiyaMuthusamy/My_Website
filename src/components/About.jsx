@@ -4,19 +4,24 @@ export default function About() {
   return (
     <section className="about-section" id="about">
       <div className="about-container">
+       
         <div className="about-left">
           <img
-            src="/icons/profile.jpg" // replace with your profile image
+            src="/icons/Aarthiya_profile.jpg" // replace with your profile image
             alt="Aarthiya"
             className="profile-img-about"
           />
+
+          
+         
+          
         </div>
         <div className="about-right">
           <h2>About Me</h2>
           <p>
             I am a passionate <strong style={{color: '#16d8eaff' }}>Software Developer</strong> with hands-on experience in 
             <strong style={{color: '#04d9ecff' }}> AI, Java, Python, SQL, APIs and full-stack application development, </strong> backed by 
-            real-world industry experience at <strong style={{color: '#0bcbdcff' }}>Aptean India</strong>. I focus on building scalable, 
+            real-world industry experience at <strong style={{color: '#0bcbdcff' }}>Aptean India Pvt Ltd</strong>. I focus on building scalable, 
             secure, and high-performance software solutions while continuously improving my skills in modern frameworks 
             and cloud technologies.
           </p>
@@ -33,18 +38,36 @@ export default function About() {
           </ul>
           <p>
             I enjoy combining AI, IoT, backend engineering, and automation to build impactful solutions.
+
           </p>
+
+            {/* Hobbies Section */}
+          <div className="mt-4">
+            <h3 className="sub-title">My Hobbies</h3>
+            <ul className="hobby-list mt-2">
+              <li>🎨 Doodle Art</li>
+              <li>💃 Dancing</li>
+              <li>🎧 Listening to music</li>
+              <li>📚 Reading Book</li>
+            </ul>
+          </div>
+          
           <p>
             I am actively seeking <strong>Software Engineer, Backend Developer, Java Developer, AI/ML Developer,</strong> 
             or <strong>Full-Stack</strong> opportunities where I can deliver value, grow professionally, and contribute to 
             innovative projects.
           </p>
+
           <div className="about-buttons">
-            <a href="/resume.pdf" className="btn-contact"
+             
+            <a href="/Aarthiya_M_Resume.pdf" className="btn-contact"
             target="_blank" 
             rel="noopener noreferrer">Hire me</a>
-            
-          </div>
+           </div>
+                    {/* Hobbies Section */}
+         
+                    
+          
         </div>
       </div>
     </section>

@@ -194,20 +194,8 @@ export default function Skills() {
 
       <div className="tools-box">
         
-    <h3>Tools & Platforms</h3>
+    <h3>Tools & Platforms Known</h3>
     <div className="tools-icons">
-    <div className="tool">
-      <img src="/icons/git.png" alt="Git" />
-      <span>Git</span>
-    </div>
-    <div className="tool">
-      <img src="/icons/postman.png" alt="Postman" />
-      <span>Postman</span>
-    </div>
-    <div className="tool">
-      <img src="/icons/vscode.jpeg" alt="VS Code" />
-      <span>VS Code</span>
-    </div>
     <div className="tool">
       <img src="/icons/eclipse.png" alt="Eclipse" />
       <span>Eclipse</span>
@@ -219,6 +207,10 @@ export default function Skills() {
     <div className="tool">
       <img src="/icons/android.png" alt="Android Studio" />
       <span>Android Studio</span>
+    </div>
+    <div className="tool">
+      <img src="/icons/docker.png" alt="VS Code" />
+      <span>Docker</span>
     </div>
   
     <div className="tool">

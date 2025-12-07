@@ -423,6 +423,108 @@ body, #root{
 
 
 
+/*About Section*/
+
+.about-section {
+  padding: 120px 20px;
+  background-color: #022f32;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  gap: 40px;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-img-about {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 2px solid rgb(12, 255, 215);
+  margin-right: 60px;
+  object-fit: cover;       /* ensures zoom fit */
+  object-position: center; /* keeps face centered */
+  display: block; 
+  box-shadow: 0 10px 25px rgba(236, 232, 232, 0.2);
+}
+
+
+
+.profile-img-about:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 35px rgba(7, 245, 245, 0.9);
+}
+
+.about-right {
+  flex: 2.5;
+  
+}
+
+.about-right h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-right p {
+  font-size: 23px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #036c6c;
+}
+
+.about-right ul {
+  font-size: 20px;
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #a6c2cb;
+}
+
+/*p hover */
+.about-right p:hover {
+  color: rgb(233, 237, 237); /* Example: blue on hover */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for list items in About section */
+.about-right ul li:hover {
+  color: rgb(22, 217, 194); /* Same hover color */
+  cursor: pointer; /* Optional, gives pointer */
+  transition: color 0.3s ease;
+}
+
+
+.btn-contact {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #f0f3f3;
+  color: rgb(11, 10, 10);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #151416;
+  color: white;
+  border: 2px solid rgb(127, 246, 255);
+}
+
+
+
+
 /* Skills Section */
 
 
@@ -712,6 +814,188 @@ body, #root{
 
 
 
+/*Projects*/
+.projects-section {
+  padding: 80px 0;
+  background: #070b14;
+  color: white;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.projects-subtitle {
+  color: #ff3b3b;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.project-card {
+  background: #0d1117;
+  padding-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.project-card img {
+  width: 50%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-type {
+  display: block;
+  margin-top: 10px;
+  color: #ff3b3b;
+  font-size: 0.9rem;
+}
+
+.project-name {
+  margin-top: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* MODAL */
+.modal-overlay {
+ 
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-content {
+  width: 500px;
+  background: #111827;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  text-align: left;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modal-type {
+  color: #ff3b3b;
+  margin-bottom: 10px;
+}
+
+.modal-description {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-list li {
+  background: #1f2937;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.modal-btns {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+.github {
+  background: #24292e;
+}
+
+.live {
+  background: #ff3b3b;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Experience*/
 
@@ -872,103 +1156,5 @@ h2 span {
   opacity: 1; /* fully visible */
   filter: drop-shadow(0 0 8px #1e2626); /* glow effect */
   transform: scale(1.2); /* optional: slight enlargement */
-}
-
-
-
-/*About Section*/
-
-.about-section {
-  padding: 80px 20px;
-  background-color: #022f32;
-  display: flex;
-  justify-content: center;
-}
-
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1500px;
-  gap: 40px;
-}
-
-.about-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.profile-img-about {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  margin-right: 60px;
-  object-fit: cover;
-  box-shadow: 0 10px 25px rgba(236, 232, 232, 0.2);
-}
-
-
-
-.profile-img-about:hover {
-  transform: scale(1.07);
-  box-shadow: 0 0 35px rgba(7, 245, 245, 0.9);
-}
-
-.about-right {
-  flex: 2.5;
-  
-}
-
-.about-right h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.about-right p {
-  font-size: 23px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  color: #036c6c;
-}
-
-.about-right ul {
-  font-size: 20px;
-  list-style-type: disc;
-  margin-left: 20px;
-  color: #a6c2cb;
-}
-
-/*p hover */
-.about-right p:hover {
-  color: rgb(233, 237, 237); /* Example: blue on hover */
-  transition: color 0.3s ease;
-}
-
-/* Hover effect for list items in About section */
-.about-right ul li:hover {
-  color: rgb(22, 217, 194); /* Same hover color */
-  cursor: pointer; /* Optional, gives pointer */
-  transition: color 0.3s ease;
-}
-
-
-.btn-contact {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #f0f3f3;
-  color: rgb(11, 10, 10);
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 15px;
-  transition: 0.3s;
-}
-
-.btn-contact:hover {
-  background-color: #151416;
-  color: white;
-  border: 2px solid rgb(127, 246, 255);
 }
 
