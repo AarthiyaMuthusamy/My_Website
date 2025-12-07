@@ -7,7 +7,7 @@ export default function About() {
        
         <div className="about-left">
           <img
-            src="/icons/Aarthiya_profile.jpg" // replace with your profile image
+            src="/icons/Aarthiya_Profile.jpg" // replace with your profile image
             alt="Aarthiya"
             className="profile-img-about"
           />
