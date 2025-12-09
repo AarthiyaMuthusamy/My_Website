@@ -9,7 +9,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://my-website-nine-lilac-63.vercel.app/#contact", {
+    const res = await fetch("https://my-website-nine-lilac-63.vercel.app/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, phone, message }),
