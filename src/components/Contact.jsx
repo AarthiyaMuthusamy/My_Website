@@ -45,7 +45,7 @@ export default function ContactForm() {
                 className="form-control custom-placeholder"
                 placeholder="Enter your name"
                 required
-                
+                name="name"
                 
               />
             </div>
@@ -57,7 +57,7 @@ export default function ContactForm() {
                 className="form-control custom-placeholder"
                 placeholder="Enter your email"
                 required
-                
+                name="email"
                 
               />
             </div>
@@ -69,7 +69,7 @@ export default function ContactForm() {
                 className="form-control custom-placeholder"
                 placeholder="Enter your mobile Number"
                 required
-                
+                name="phone"
                 
               />
             </div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
                 rows="4"
                 placeholder="Write your message"
                 required
-                
+                name="message"
                
               ></textarea>
             </div>
