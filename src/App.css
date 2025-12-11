@@ -880,7 +880,7 @@ body, #root{
   top: 30%;
   left: 10%;
   width: 70%;
-  height: 50%;
+  height: 70%;
   background: rgba(108, 185, 189, 0.75);
   display: flex;
   justify-content: center;
@@ -897,7 +897,7 @@ body, #root{
   position: relative;
   z-index: 1100;
   text-align: left;
-  margin-top: 0px;
+  margin-top: 10px;
   animation: pop 0.3s ease;
 }
 
