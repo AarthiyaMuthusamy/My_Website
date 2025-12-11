@@ -1,35 +1,33 @@
-import React, { useState } from "react";
-export default function Contact() {
+import { useState } from 'react';
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+export default function ContactForm() {
+  const [result, setResult] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setResult("");
 
-    const res = await fetch("https://my-website-nine-lilac-63.vercel.app/api/contact", {
+    const formData = new FormData(event.target);
+    formData.append("access_key", "9ff7d5e4-367e-4942-bdf6-fc4379e235d7");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, phone, message }),
+      body: formData
     });
 
-    const data = await res.json();
+    const data = await response.json();
 
     if (data.success) {
-      alert("Message Sent Successfully!");
-
-      // Clear fields
-      setName("");
-      setEmail("");
-      setPhone("");
-      setMessage("");
+      setResult("Your message has been sent successfully!");
+      event.target.reset(); // ✅ clears form fields
     } else {
-      alert("Failed to send message. Try again.");
+      setResult("Something went wrong. Please try again.");
     }
-  };
 
+    setIsSubmitting(false);
+  };
 
   return (
     <section id="contact" className="contact-continer container-fluid py-4 ">
@@ -38,7 +36,7 @@ export default function Contact() {
       <div className="row justify-content-center ">
         <div className="col-md-8 col-lg-6 contact-section">
 
-          <form className="contact-form p-4 shadow rounded " onSubmit={handleSubmit}>
+          <form className="contact-form p-4 shadow rounded " onSubmit={onSubmit}>
             
             <div className="mb-3">
               <label className="form-label">Full Name</label>
@@ -47,8 +45,8 @@ export default function Contact() {
                 className="form-control custom-placeholder"
                 placeholder="Enter your name"
                 required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                
+                
               />
             </div>
 
@@ -59,8 +57,8 @@ export default function Contact() {
                 className="form-control custom-placeholder"
                 placeholder="Enter your email"
                 required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                
+                
               />
             </div>
 
@@ -71,8 +69,8 @@ export default function Contact() {
                 className="form-control custom-placeholder"
                 placeholder="Enter your mobile Number"
                 required
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                
+                
               />
             </div>
 
@@ -83,14 +81,15 @@ export default function Contact() {
                 rows="4"
                 placeholder="Write your message"
                 required
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                
+               
               ></textarea>
             </div>
 
-            <button type="submit" className="btn btn-info w-100 fw-bold text-black send-btn">
-              Send Message
+            <button type="submit" disabled={isSubmitting} className="btn btn-info w-100 fw-bold text-black send-btn">
+              {isSubmitting ? "Sending..." : "Submit"} 
             </button>
+            <p className="result-data">{result}</p>
           </form>
 
         </div>
