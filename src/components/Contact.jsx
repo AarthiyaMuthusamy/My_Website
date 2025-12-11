@@ -36,7 +36,7 @@ export default function ContactForm() {
       <div className="row justify-content-center ">
         <div className="col-md-8 col-lg-6 contact-section">
 
-          <form className="contact-form p-4 shadow rounded " onSubmit={onSubmit}>
+          <form className="contact-form p-4 shadow rounded " onSubmit={onSubmit} method="POST">
             
             <div className="mb-3">
               <label className="form-label">Full Name</label>
