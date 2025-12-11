@@ -116,13 +116,8 @@ export default function Projects() {
         <div className="modal-overlay" onClick={() => setSelectedProject(null)}>
           <div
             className="modal-content"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              src={selectedProject.image}
-              alt={selectedProject.title}
-              className="modal-img"
-            />
+            onClick={(e) => e.stopPropagation()}>
+            
             <h2>{selectedProject.title}</h2>
             <p className="modal-type">{selectedProject.type}</p>
 
