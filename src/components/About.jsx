@@ -60,7 +60,7 @@ export default function About() {
 
           <div className="about-buttons">
              
-            <a href="/Aarthiya_M_Resume.pdf" className="btn-contact"
+            <a href="/Aarthiya_M_SoftwareDeveloper_Resume.pdf" className="btn-contact"
             target="_blank" 
             rel="noopener noreferrer">Hire me</a>
            </div>
