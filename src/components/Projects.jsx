@@ -59,7 +59,7 @@ const projectData = [
     title: "Face Recognition Using CNN",
     type: "Deep Learning (ML)",
     image: "/icons/face_recognition.jpeg",
-    github: "https://github.com/AarthiyaMuthusamy/Brain-tumor-detection",
+    github: "https://github.com/AarthiyaMuthusamy/face_recognition",
 
     description:
       "This project uses a Convolutional Neural Network (CNN) to extract facial features and classify individuals with high accuracy.OpenCV is used for detecting faces from live video, and the trained model identifies the person based on learned features.",
