@@ -20,7 +20,7 @@ export default function Hero() {
             </p>
 
             <div className="mt-4">
-              <a className="custom-btn-outline btn-lg" href="/Aarthiya_M_Resume.pdf"
+              <a className="custom-btn-outline btn-lg" href="/Aarthiya_M_SoftwareDeveloper_Resume.pdf"
               download
               >Download CV</a>
               <a className="custom-btn-fill btn-lg ms-3" href="#projects">View Projects</a>
